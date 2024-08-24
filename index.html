@@ -13,6 +13,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
      <style>
+        body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden; /* Elimina cualquier desplazamiento no deseado */
+        }
         .section-title {
             color: blue;
             margin-top: 2rem;
@@ -30,10 +35,12 @@
         }
 
         #sidebar-wrapper {
-            width: 235px; /* Ajusta el ancho según tu necesidad */
+            width: 225px; /* Ajusta el ancho según tu necesidad */
             background-color: #343a40; /* Color de fondo oscuro */
             margin: 0; /* Elimina cualquier margen */
             padding: 0; /* Elimina cualquier padding */
+            height: 100vh; /* Ocupa toda la altura de la ventana */
+            overflow-y: auto; /* Habilita el desplazamiento si es necesario */
         }
 
         .list-group {
