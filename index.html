@@ -23,6 +23,58 @@
         .section-item {
             margin-top: 1rem;
         }
+               #wrapper {
+            display: flex;
+        }
+
+        #sidebar-wrapper {
+            width: 250px; /* Ajusta el ancho según tu necesidad */
+            background-color: #343a40; /* Color de fondo oscuro */
+            overflow-y: auto; /* Habilita el desplazamiento vertical si es necesario */
+        }
+
+        .list-group {
+            display: block; /* Mantén el display en block para alinear verticalmente los elementos */
+            margin: 0;
+            padding: 0;
+            list-style-type: none; /* Elimina puntos de lista si hay */
+        }
+
+        .list-group-item {
+            display: block; /* Asegura que cada elemento se muestre en una línea separada */
+            width: 100%; /* Asegura que ocupen todo el ancho del contenedor */
+            padding: 10px 15px; /* Ajusta el padding para un mejor espaciado */
+            text-align: left; /* Alinea el texto a la izquierda */
+            text-decoration: none; /* Elimina subrayados de los enlaces */
+            color: white; /* Color del texto */
+            font-size: 0.9rem; /* Tamaño de la fuente */
+        }
+
+        .list-group-item-action:hover {
+            background-color: #495057; /* Cambia el color de fondo al pasar el mouse */
+        }
+
+        .navbar-body {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 80%;
+        }
+
+        .navbar-title {
+            display: flex;
+            align-items: center;
+        }
+
+        .navbar-names {
+            display: flex;
+            gap: 30px;
+        }
+
+        .img-fluid {
+            max-width: 100%;
+            height: auto;
+        }
     </style>
 </head>
 
@@ -64,7 +116,6 @@
         <div class="sidebar-heading text-white"></div>
         <div class="list-group list-group-flush" style="flex-grow: 1; overflow-y: auto;">
             <a href="#home" class="list-group-item list-group-item-action bg-dark text-white">Inicio</a>
-            <a href="" class="list-group-item list-group-item-action bg-dark text-white"></a>
             <a href="#IdeacionV1" class="list-group-item list-group-item-action bg-dark text-white">Ideación - Versión 1</a>
             <a href="#IdeacionV2" class="list-group-item list-group-item-action bg-dark text-white">Ideación - Versión 2</a>
             <a href="#PROTO_NO_FUNC" class="list-group-item list-group-item-action bg-dark text-white">PROTOTIPOS NO FUNCIONALES QUE SON CANDIDATAS A IMPLEMENTAR</a>
