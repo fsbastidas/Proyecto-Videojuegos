@@ -8,10 +8,11 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="./ActivosIMG/Logo-Midi-Toy.ico" type="image/x-icon">
     <link rel="shortcut icon" href="./ActivosIMG/Logo-Midi-Toy.ico" type="image/x-icon">
+    <!-- Enlace a la fuente de Google Fonts (Oswald) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
-    <style>
+     <style>
         .section-title {
             color: blue;
             margin-top: 2rem;
@@ -22,45 +23,26 @@
         .section-item {
             margin-top: 1rem;
         }
-        .sidebar-wrapper {
-            position: fixed;
-            width: 200px;
-            top: 0;
-            left: 0;
-            height: 100%;
-            background-color: #343a40;
-            padding-top: 20px;
-            z-index: 1000;
-        }
-        .sidebar-wrapper a {
-            color: white;
-            padding: 10px;
-            text-decoration: none;
-            display: block;
-        }
-        .sidebar-wrapper a:hover {
-            background-color: #495057;
-        }
-        #page-content-wrapper {
-            margin-left: 220px;
-            padding: 20px;
-        }
     </style>
 </head>
 <body class="dark-mode">
     <div class="d-flex" id="wrapper">
         <!-- Sidebar Left -->
-        <div class="sidebar-wrapper bg-dark">
-            <a href="#home">Inicio</a>
-            <a href="#about">Ideación - Versión 1</a>
-            <a href="#juegos">Prototipado - Versión 1</a>
-            <a href="#tecnologias">Tecnologías Utilizadas</a>
-            <a href="#Diagrama">Diagrama de Arquitectura</a>
-            <a href="#Cronograma">Cronograma</a>
+        <div class="sidebar-wrapper bg-plomo border-right dark-mode">
+            <div class="sidebar-heading text-white">Navegación</div>
+            <div class="list-group list-group-flush" style="flex-grow: 1; overflow-y: auto; display: flex; flex-direction: column; align-items: center; justify-content: center; padding-top: 10px;">
+                <a href="#home" class="list-group-item list-group-item-action bg-dark text-white">Inicio</a>
+                <a href="#about" class="list-group-item list-group-item-action bg-dark text-white">Ideación - Versión 1</a>
+                <a href="#juegos" class="list-group-item list-group-item-action bg-dark text-white">Prototipado - Versión 1</a>
+                <a href="#tecnologias" class="list-group-item list-group-item-action bg-dark text-white">Tecnologías Utilizadas</a>
+                <a href="#Diagrama" class="list-group-item list-group-item-action bg-dark text-white">Diagrama de Arquitectura</a>
+                <a href="#Cronograma" class="list-group-item list-group-item-action bg-dark text-white">Cronograma</a>
+            </div>
         </div>
 
         <!-- Page Content -->
         <div id="page-content-wrapper" style="flex: 1;">
+
             <nav class="navbar navbar-expand-lg navbar-dark bg-dark border-bottom dark-mode">
                 <div class="navbar-body" style="display: flex; justify-content: space-between; align-items: center; width: 80%;">
                     <div class="navbar-title" style="display: flex; align-items: center;">
@@ -82,95 +64,556 @@
                         </a>
                         <a href="https://github.com/RicRomBald" alt="RicRomBald" style="text-decoration:none; display: flex; align-items: center;">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#currentColor" class="bi bi-github" viewBox="0 0 16 16" style="margin-right: 10px;">
-                                                            <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
-                        </svg>
-                        <p style="font-size:15px; margin: 0; color:#990000;">Ricardo Romero</p>
-                    </a>
+                                <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
+                            </svg>
+                            <p style="font-size:15px; margin: 0; color:#990000;">Ricardo Romero</p>
+                        </a>
+                    </div>
                 </div>
+            </nav>
+
+            <div class="container-fluid">
+                <section id="home" style="margin-top: 0 !important;">
+                    <table class="responsive-table" style="width: 100%; table-layout: fixed;">
+                        <tr>
+                            <td style="vertical-align: middle; padding-right: 20px;">
+                                <h2>Midi Toy</h2>
+                                <p>¡Explora el mundo musical con Midi Toy! Sumérgete en una experiencia única donde podrás jugar, experimentar y disfrutar de música infantil utilizando a MIDI TOY en este emocionante y divertido juego. Descubre melodías encantadoras, interactúa con coloridos personajes musicales y desarrolla tus habilidades creativas, interactúa con coloridos personajes musicales y desarrolla tus habilidades creativas mientras te diviertes. MIDI TOY te invita a un viaje sonoro lleno de alegría y aprendizaje, ideal para niños y familias que aman la música.</p>
+                            </td>
+                            <td class="img-td" style="width: 40%; vertical-align: middle;">
+                                <img class="fade-in hover-scale-shadow rounded-inner-shadow" src="./ActivosIMG/MODELOTOY.png" style="width: 100%; height: auto;" alt="MIDI TOY LOGO">
+                            </td>
+                        </tr>
+                    </table>
+                </section>
+                <section id="about" style="margin-top: 1.25 rem !important;">
+                    <h2>Ideación - Versión 1</h2>
+                    <table class="responsive-table" style="width: 100%; table-layout: fixed;">
+                        <tr>
+                            <td style="width: 100%; vertical-align: middle; display: flex; justify-content: center; align-items: center; text-align-last: center;">
+                                <img class="fade-in hover-scale-shadow rounded-inner-shadow" src="./ActivosIMG/Ideacion.png" style="width: 90%; height: auto;" alt="ideación">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="vertical-align: middle; padding-right: 20px; width: 90%; padding-top:0.75%; padding-bottom:3.5%; ">
+                                <p>Se siguieron los pasos de ideación los cuales fueron: proceso de diseño centrado en el juego o objeto de interés, establecer objetivos de experiencia (se discutieron con el equipo) y crear prototipos y pruebas.</p>
+                                <p>El proceso de Ideación utilizado fue el de lluvia de ideas y mapa mental, dado que al tener una temática ya seleccionada, en este caso MIDI TOY, no estamos sujetos a la creación de un videojuego desde cero, al contrario, estamos ligados a la estructuración y organización del resultado final.</p>
+                                <p><p>"Lluvia de Ideas": Iniciamos con una sesión de lluvia de ideas en la que todo el equipo participó activamente, generando una variedad de conceptos y características posibles para el videojuego priorizando cantidad.</p>
+                                <p><p>"Mapa Mental": Después, utilizamos un mapa mental para organizar y desarrollar las ideas generadas. Esto nos ayudó a visualizar la conexión entre los distintos elementos del videojuego y a estructurar las ideas más viables de manera coherente y lógica.</p>
+                            </td>
+                        </tr>
+                    </table>
+
+                    <h3>Ideas o características más relevantes de la Versión 1</h3>
+                     <td style="vertical-align: middle; padding-right: 20px; width: 90%; padding-top:0.75%; padding-bottom:3.5%; ">
+                                <p>"Análisis": Entre un grupo de varias ideas, se deben considerar varios factores clave para asegurar que las ideas seleccionadas sean las más prometedoras y viables:</p>
+                                <p>1. Tienen relevancia con el objetivo principal del juguete el cuál es divertir y educar.</p>
+                                <p>2. Viabilidad técnica y de recursos, lo cual permitira que el desarrollo de un videojuego tenga bases y objetivos reales y alcanzables.</p>
+                                <p>3. Asegurarse de que el niño tenga beneficios en el aprendizaje y que sea accesible son ideas referentes primordiales para un jugete infantil, debido a la atracción que puede generar en padres y niños de diferentes formas.</p>
+                                <p>4. El enfoque de derivar las caracteristicas del juego al inicio es la base de lo que uno proyecta se quiere lograr y metas a alcanzar.</p>
+                               
+                    <table class="responsive-table" style="width: 100%; table-layout: fixed;">
+                        <tr>
+                            <td class="img-td" style="width: 50%; vertical-align: middle; text-align-last: center;">
+                                <img class="fade-in hover-scale-shadow rounded-inner-shadow" src="./ActivosIMG/Objetivos.png" style="width: 150%; height: auto;" alt="Objetivos">
+                            </td>
+                            <td style="vertical-align: middle; padding-left: 280px;">
+                                <p>Objetivos enfocados al aprendizaje y desarrollo del niño.</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="img-td" style="width: 50%; vertical-align: middle; text-align-last: center;">
+                                <img class="fade-in hover-scale-shadow rounded-inner-shadow" src="./ActivosIMG/Mecanicas.png" style="width: 150%; height: auto;" alt="Mecánicas">
+                            </td>
+                            <td style="vertical-align: middle; padding-left: 280px;">
+                                <p>Mecánicas enfocadas en la motricidad del niño.</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="img-td" style="width: 50%; vertical-align: middle; text-align-last: center;">
+                                <img class="fade-in hover-scale-shadow rounded-inner-shadow" src="./ActivosIMG/Aprendizaje.png" style="width: 150%; height: auto;" alt="Aprendizaje">
+                            </td>
+                            <td style="vertical-align: middle; padding-left: 280px;">
+                                <p>Beneficios en el aprendizaje y desarrollo del niño para mejorar su concentración y desempeño motriz.</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="img-td" style="width: 50%; vertical-align: middle; text-align-last: center;">
+                                <img class="fade-in hover-scale-shadow rounded-inner-shadow" src="./ActivosIMG/Accesibilidad.png" style="width: 150%; height: auto;" alt="Accesibilidad">
+                            </td>
+                            <td style="vertical-align: middle; padding-left: 280px;">
+                                <p>Fácil accesibilidad en la aplicación para que no existan dificultades al momento de jugar y disfrutar.</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="img-td" style="width: 50%; vertical-align: middle; text-align-last: center;">
+                                <img class="fade-in hover-scale-shadow rounded-inner-shadow" src="./ActivosIMG/Estadisticas.png" style="width: 150%; height: auto;" alt="Estadísticas">
+                            </td>
+                            <td style="vertical-align: middle; padding-left: 280px;">
+                                <p>Estadísticas para llevar un control de rendimiento y registrar el progreso del niño.</p>
+                            </td>
+                                                <tr>
+                            <td class="img-td" style="width: 50%; vertical-align: middle; text-align-last: center;">
+                                <img class="fade-in hover-scale-shadow rounded-inner-shadow" src="./ActivosIMG/Recompensas.png" style="width: 150%; height: auto;" alt="Recompensas">
+                            </td>
+                            <td style="vertical-align: middle; padding-left: 280px;">
+                                <p>Premios y recompensas para mejorar la experiencia al jugar del niño.</p>
+                            </td>
+                        </tr>
+                    </table>
+                </section>
+            
+                    <h3 id="juegos">Ideas para la ejecución del Prototipado de la Versión 1</h3>
+                    <h4>IDEA 1</h4>
+                    <h5>BLOQUE AVENTURA: El juego consiste en que se tiene un objeto grande, una figura geométrica, animal, con espacios que son figuras, donde el niño debe colocar correctamente las piezas en las posiciones correctas, si el niño lo hace bien habrá una elevación de música, indicando que lo está haciendo bien, si es el caso contrario sonará baja.</h5>
+                    <table class="responsive-table" style="width: 100%; table-layout: fixed;">
+                        <tr>
+                            <td class="img-td" style="width: 33%; vertical-align: middle; text-align-last: center;">
+                                <img class="fade-in hover-scale-shadow rounded-inner-shadow" src="./ActivosIMG/IDEA1.png" style="width: 65%; height: auto;" alt="IDEA 1">
+                            </td>
+                        </tr>
+                    </table>
+                    
+                    <h4>IDEA 2</h4>
+                    <h5>AMIGO SUAVE: El juego consiste en un muñeco similar al Midi Toy, que tendrá en su estómago espacios en forma de figuras donde el niño debe colocar las figuras en la posición correcta, si lo hace bien recibirá una retroalimentación en pantalla con música ambiental y emoticones en pantalla, en cambio si lo hace mal sonará una música triste.</h5>
+                    <table class="responsive-table" style="width: 100%; table-layout: fixed;">
+                        <tr>
+                            <td class="img-td" style="width: 33%; vertical-align: middle; text-align-last: center;">
+                                <img class="fade-in hover-scale-shadow rounded-inner-shadow" src="./ActivosIMG/IDEA2.png" style="width: 65%; height: auto;" alt="IDEA 2">
+                            </td>
+                        </tr>
+                    </table>
+                </section>
+                <section id="about" style="margin-top: 1.25 rem !important;">
+                    <h6>Ideación - Versión 2</h6>
+                    <table class="responsive-table" style="width: 100%; table-layout: fixed;">
+                        <tr>
+                            <td style="width: 100%; vertical-align: middle; display: flex; justify-content: center; align-items: center; text-align-last: center;">
+                                <img class="fade-in hover-scale-shadow rounded-inner-shadow" src="./ActivosIMG/V2IDEACIÓN2.jpg" style="width: 65%; height: auto;" alt="ideación2">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="vertical-align: middle; padding-right: 20px; width: 90%; padding-top:0.75%; padding-bottom:3.5%;">
+                                <p>El proceso de Ideación para esta nueva versión fue realizado mediante lluvia de ideas, el motivo por el cual se tomó la decisión de elaborar nuevamente un proceso de ideación fue porque la retroalimentación brindada por parte del profesor nos hizo reflexionar sobre las ideas seleccionadas y la poca creatividad que estas tenían, por lo que se optó por darle un giro 360 al proyecto. Las ideas generadas a continuación se basaban en posibles videojuegos que trabajen con la mecánica, función del muñeco, el mismo muñeco o elemento que se lo asocie de formas muy diversas y espontáneas.</p>
+                                <p>Se volvieron a seguir los pasos de ideación los cuales fueron: proceso de diseño centrado en el juego o objeto de interés, establecer objetivos de experiencia (discutirlos con el equipo) y crear prototipos y pruebas.</p>
+                            </td>
+                        </tr>
+                    </table>
+
+                    <h7>Ideas para la elaboración de la Versión 2</h7>
+                    <table class="responsive-table" style="width: 100%; table-layout: fixed;">
+                        <tr>
+                            <td class="img-td" style="width: 50%; vertical-align: middle; text-align-last: center;">
+                                <img class="fade-in hover-scale-shadow rounded-inner-shadow" src="./ActivosIMG/V2IDEA1.jpg" style="width: 150%; height: auto;" alt="idea21">
+                            </td>
+                            <td style="vertical-align: middle; padding-left: 280px;">
+                                <p>IDEA 1 - Aves Arcoíris</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="img-td" style="width: 50%; vertical-align: middle; text-align-last: center;">
+                                <img class="fade-in hover-scale-shadow rounded-inner-shadow" src="./ActivosIMG/V2IDEA2.jpg" style="width: 150%; height: auto;" alt="idea22">
+                            </td>
+                            <td style="vertical-align: middle; padding-left: 280px;">
+                                <p>IDEA 2 - Puzzle Musical</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="img-td" style="width: 50%; vertical-align: middle; text-align-last: center;">
+                                <img class="fade-in hover-scale-shadow rounded-inner-shadow" src="./ActivosIMG/V2IDEA3.jpg" style="width: 150%; height: auto;" alt="idea23">
+                            </td>
+                            <td style="vertical-align: middle; padding-left: 280px;">
+                                <p>IDEA 3 - Aventura en el Bosque</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="img-td" style="width: 50%; vertical-align: middle; text-align-last: center;">
+                                <img class="fade-in hover-scale-shadow rounded-inner-shadow" src="./ActivosIMG/V2IDEA4.jpg" style="width: 150%; height: auto;" alt="idea24">
+                            </td>
+                            <td style="vertical-align: middle; padding-left: 280px;">
+                                <p>IDEA 4 - Caza del Tesoro</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="img-td" style="width: 50%; vertical-align: middle; text-align-last: center;">
+                                <img class="fade-in hover-scale-shadow rounded-inner-shadow" src="./ActivosIMG/V2IDEA5.jpg" style="width: 150%; height: auto;" alt="idea25">
+                            </td>
+                            <td style="vertical-align: middle; padding-left: 280px;">
+                                <p>IDEA 5 - Dúo de Aves</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="img-td" style="width: 50%; vertical-align: middle; text-align-last: center;">
+                                <img class="fade-in hover-scale-shadow rounded-inner-shadow" src="./ActivosIMG/V2IDEA6.jpg" style="width: 150%; height: auto;" alt="idea26">
+                            </td>
+                            <td style="vertical-align: middle; padding-left: 280px;">
+                                <p>IDEA 6 - Feliz Midi Birthday</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="img-td" style="width: 50%; vertical-align: middle; text-align-last: center;">
+                                <img class="fade-in hover-scale-shadow rounded-inner-shadow" src="./ActivosIMG/V2IDEA7.jpg" style="width: 150%; height: auto;" alt="idea27">
+                            </td>
+                            <td style="vertical-align: middle; padding-left: 280px;">
+                                <p>IDEA 7 - Exploración Espacial</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="img-td" style="width: 50%; vertical-align: middle; text-align-last: center;">
+                                <img class="fade-in hover-scale-shadow rounded-inner-shadow" src="./ActivosIMG/V2IDEA8.jpg" style="width: 150%; height: auto;" alt="idea28">
+                            </td>
+                            <td style="vertical-align: middle; padding-left: 280px;">
+                                <p>IDEA 8 - Safari Musical</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="img-td" style="width: 50%; vertical-align: middle; text-align-last: center;">
+                                <img class="fade-in hover-scale-shadow rounded-inner-shadow" src="./ActivosIMG/V2IDEA9.jpg" style="width: 150%; height: auto;" alt="idea29">
+                            </td>
+                            <td style="vertical-align: middle; padding-left: 280px;">
+                                <p>IDEA 9 - Carnaval de Aves</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="img-td" style="width: 50%; vertical-align: middle; text-align-last: center;">
+                                <img class="fade-in hover-scale-shadow rounded-inner-shadow" src="./ActivosIMG/V2IDEA10.jpg" style="width: 150%; height: auto;" alt="idea210">
+                            </td>
+                            <td style="vertical-align: middle; padding-left: 280px;">
+                                <p>IDEA 10 - Aventura Submarina</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="img-td" style="width: 50%; vertical-align: middle; text-align-last: center;">
+                                <img class="fade-in hover-scale-shadow rounded-inner-shadow" src="./ActivosIMG/V2IDEA11.jpg" style="width: 150%; height: auto;" alt="idea211">
+                            </td>
+                            <td style="vertical-align: middle; padding-left: 280px;">
+                                <p>IDEA 11 - Viaje en el Tiempo</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="img-td" style="width: 50%; vertical-align: middle; text-align-last: center;">
+                                <img class="fade-in hover-scale-shadow rounded-inner-shadow" src="./ActivosIMG/V2IDEA12.jpg" style="width: 150%; height: auto;" alt="idea212">
+                            </td>
+                            <td style="vertical-align: middle; padding-left: 280px;">
+                                <p>IDEA 12 - Fiesta de Colores</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="img-td" style="width: 50%; vertical-align: middle; text-align-last: center;">
+                                <img class="fade-in hover-scale-shadow rounded-inner-shadow" src="./ActivosIMG/V2IDEA13.jpg" style="width: 150%; height: auto;" alt="idea213">
+                            </td>
+                            <td style="vertical-align: middle; padding-left: 280px;">
+                                <p>IDEA 13 - Parque de Diversiones</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="img-td" style="width: 50%; vertical-align: middle; text-align-last: center;">
+                                <img class="fade-in hover-scale-shadow rounded-inner-shadow" src="./ActivosIMG/V2IDEA14.jpg" style="width: 150%; height: auto;" alt="idea214">
+                            </td>
+                            <td style="vertical-align: middle; padding-left: 280px;">
+                                <p>IDEA 14 - Mundo de Cuentos de Hadas</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="img-td" style="width: 50%; vertical-align: middle; text-align-last: center;">
+                                <img class="fade-in hover-scale-shadow rounded-inner-shadow" src="./ActivosIMG/V2IDEA15.jpg" style="width: 150%; height: auto;" alt="idea215">
+                            </td>
+                            <td style="vertical-align: middle; padding-left: 280px;">
+                                <p>IDEA 15 - Fiesta de Estaciones</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="img-td" style="width: 50%; vertical-align: middle; text-align-last: center;">
+                                <img class="fade-in hover-scale-shadow rounded-inner-shadow" src="./ActivosIMG/V2IDEA16.jpg" style="width: 150%; height: auto;" alt="idea216">
+                            </td>
+                            <td style="vertical-align: middle; padding-left: 280px;">
+                                <p>IDEA 16 - Rally Musical</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="img-td" style="width: 50%; vertical-align: middle; text-align-last: center;">
+                                <img class="fade-in hover-scale-shadow rounded-inner-shadow" src="./ActivosIMG/V2IDEA17.jpg" style="width: 150%; height: auto;" alt="idea217">
+                            </td>
+                            <td style="vertical-align: middle; padding-left: 280px;">
+                                <p>IDEA 17 - Aventura Pirata</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="img-td" style="width: 50%; vertical-align: middle; text-align-last: center;">
+                                <img class="fade-in hover-scale-shadow rounded-inner-shadow" src="./ActivosIMG/V2IDEA18.jpg" style="width: 150%; height: auto;" alt="idea218">
+                            </td>
+                            <td style="vertical-align: middle; padding-left: 280px;">
+                                <p>IDEA 18 - Festival de Música</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="img-td" style="width: 50%; vertical-align: middle; text-align-last: center;">
+                                <img class="fade-in hover-scale-shadow rounded-inner-shadow" src="./ActivosIMG/Idea de PROTOTIPO_V2_2_FINAL.png" style="width: 150%; height: auto;" alt="idea219">
+                            </td>
+                            <td style="vertical-align: middle; padding-left: 280px;">
+                                <p>IDEA 19 - Aventura de los Elementos</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="img-td" style="width: 50%; vertical-align: middle; text-align-last: center;">
+                                <img class="fade-in hover-scale-shadow rounded-inner-shadow" src="./ActivosIMG/V2IDEA20.jpg" style="width: 150%; height: auto;" alt="idea220">
+                            </td>
+                            <td style="vertical-align: middle; padding-left: 280px;">
+                                <p>IDEA 20 - Baile de la Luna</p>
+                            </td>
+                        </tr>
+                    </table>
+                    <h8>Ideas más relevantes de la Versión 2</h8>
+                    <table class="responsive-table" style="width: 100%; table-layout: fixed;">
+                        <p>"Análisis": Entre un grupo de varias ideas de videojuegos, se deben considerar varios factores clave para asegurar que las ideas seleccionadas sean las más referencias al elemento principal del cual se deriva toda el desarrollo ("MIDI TOY"):</p>
+                                <p>1. La temática o forma de juego tiene elementos propios del muñeco (musica, seleccionar cosas y colocar en el lugar correcto).</p>
+                                <p>2. Viabilidad técnica y de recursos, ideas que sean escalables y no imposibles de lograrlas (un juego facil para el niño y intuitivo en pocas palabras).</p>
+                                <p>3. Que sea beneficioso y divertido para el niño.</p>
+                                <p>4. Luego de exponer las ideas con mayor nivel de agrado por parte del equipo y exponerlas a otra persona logrando que esta persona asocie un juego infantil sencillo y que mezcle de formas diferentes las acciones del muñeco, esas seran las ideas estrellas.</p>
+                                <p> Se presentaron 3 ideas pero las que más fueron de agrado fueron las que se presentan acontinuación, debido a que la idea que se descarto fue debido a que era un juego común y muy sencillo, no se asociaba con el MIDI TOY, no presentaba alguna novedad.</p>
+                        <tr>
+                            <td class="img-td" style="width: 50%; vertical-align: middle; text-align-last: center;">
+                                <img class="fade-in hover-scale-shadow rounded-inner-shadow" src="./ActivosIMG/Idea de PROTOTIPO_V2_1_FINAL.png" style="width: 150%; height: auto;" alt="Objetivos">
+                            </td>
+                            <td style="vertical-align: middle; padding-left: 280px;">
+                                <p>Se selecciono esta idea de las demás porque se adapta a la creación de un entorno compuesto por animales donde se debe arrastrar y soltar piezas que activan sonidos de la naturaleza.</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="img-td" style="width: 50%; vertical-align: middle; text-align-last: center;">
+                                <img class="fade-in hover-scale-shadow rounded-inner-shadow" src="./ActivosIMG/Idea de PROTOTIPO_V2_2_FINAL.png" style="width: 150%; height: auto;" alt="Mecánicas">
+                            </td>
+                            <td style="vertical-align: middle; padding-left: 280px;">
+                                <p>La elección de esta idea es debido a que es intuitivo el ver un elemento, si se refieren a el por el color, nombre o sonido el niño se le hara facil asociarlo.</p>
+                            </td>
+                        </tr>
+                    </table>
+                </section>
+            
+                    <h9 id="juegos">Ideas para la ejecución del Prototipado de la Versión 2</h9>
+                    <table class="responsive-table" style="width: 100%; table-layout: fixed;">
+                    <p>IDEA 1</p>
+                    <table class="responsive-table" style="width: 100%; table-layout: fixed;">
+                    <p>Completar un bioma seleccionando elementos como animales o cosas que reproduciran sonidos de una ruleta hasta completar todo el ecosistema incompleto.</p>
+                    <table class="responsive-table" style="width: 100%; table-layout: fixed;">
+                        <tr>
+                            <td class="img-td" style="width: 33%; vertical-align: middle; text-align-last: center;">
+                                <img class="fade-in hover-scale-shadow rounded-inner-shadow" src="./ActivosIMG/PrototipoV2_1.png" style="width: 65%; height: auto;" alt="IDEA 1">
+                            </td>
+                        </tr>
+                    </table>
+                    
+                    <p>IDEA 2</p>
+                    <table class="responsive-table" style="width: 100%; table-layout: fixed;">
+                    <p>Mediante un animal ayudante y un martillo seleccionar y golpear en un tablero figuras geométricas aleatorias con colores o no en base a las indicaciones en el menor tiempo posible.</p>
+                    <table class="responsive-table" style="width: 100%; table-layout: fixed;">
+                        <tr>
+                            <td class="img-td" style="width: 33%; vertical-align: middle; text-align-last: center;">
+                                <img class="fade-in hover-scale-shadow rounded-inner-shadow" src="./ActivosIMG/PrototipoV2_2.png" style="width: 65%; height: auto;" alt="IDEA 2">
+                            </td>
+                        </tr>
+                    </table>
+                </section>
+                <section id="about" style="margin-top: 1.25 rem !important;">
+                    
+                    <h12 id="juegos">PROTOTIPOS NO FUNCIONALES QUE SON CANDIDATAS A IMPLEMENTAR </h12>
+                    <p>IDEA 1 </p>
+                    <table class="responsive-table" style="width: 100%; table-layout: fixed;">
+                    <p>ECO CONSTRUCTOR: El juego consiste en un bioma incompleto el cual necesita ayuda de un aventurero para completar con los animales y plantas faltante, el aventurero debera seleccionar un nivel donde aprecera un bioma con elementos faltantes, mediante la indicación verbal de un ayudante (MIDI-TOY-Animal) debera seleccionar los elementos correctos hasta completar el bien, si la selección es incorrecta sonara un sonido y una cruz indicando que esta mal pero si es correcto se va completando el bioma y suena un sonido referente al objeto seleccionado. El juego es educativo debido a que introduce a los niños a los sonidos de la naturaleza y su relación con el entorno.</p>
+                    <table class="responsive-table" style="width: 100%; table-layout: fixed;">
+                        <tr>
+                            <td class="img-td" style="width: 33%; vertical-align: middle; text-align-last: center;">
+                                <img class="fade-in hover-scale-shadow rounded-inner-shadow" src="./ActivosIMG/PrototipoV2_1_FINAL.png" style="width: 70%; height: auto;" alt="IDEA 1">
+                            </td>
+                        </tr>
+                    </table>
+                    
+                    <p>IDEA 2</p>
+                    <table class="responsive-table" style="width: 100%; table-layout: fixed;">
+                    <p>FOREST ADVENTURE: El juego consiste mediante palabras, sonidos, la lógica, imaginación y la memoria el explorador podra conseguir muchos premios al reconocer de forma correcta elementos de la naturaleza, por pantalla puede aparecer el nombre de un animal, reproducirse un sonido de un animal y para los mas avanzados deberan adivinar el nombre correcto mediante un sonido y una forma el animal que es, si por nivel la selección es correcta se felicitara al explorador y se dara un incentivo, a media que avanza ¡Aumenta el reto!, pero si selecciona mal aparecera un mensaje donde el explorador podra volver a intentar dos veces más; el juego es educativo debido a que introduce a los niños los sonidos de la naturaeza y su relación con el entorno.</p>
+                    <table class="responsive-table" style="width: 100%; table-layout: fixed;">
+                        <tr>
+                            <td class="img-td" style="width: 33%; vertical-align: middle; text-align-last: center;">
+                                <img class="fade-in hover-scale-shadow rounded-inner-shadow" src="./ActivosIMG/PrototipoV2_2_FINAL.png" style="width: 65%; height: auto;" alt="IDEA 2">
+                            </td>
+                        </tr>
+                    </table>
+                        
+                <h13 style="color: blue; text-align: center; display: block;">FIGMA - ECO CONSTRUCTOR</h13>
+<table class="responsive-table" style="width: 100%; table-layout: fixed;">
+    <p>**ECO CONSTRUCTOR** es un juego divertido diseñado para introducir y fortalecer el conocimiento de los elementos de la naturaleza en los niños. Los jugadores explorarán diferentes biomas infantiles llenos de animales, árboles y otros elementos naturales. En cada nivel, que representa un bioma diferente, el aventurero deberá seleccionar los elementos faltantes para completar el escenario. Cada bioma incluye elementos sonoros y proporciona indicaciones a través de un ayudante, ya sea de forma escrita o enunciada, para guiar a los jugadores en su aventura.</p>
+    <tr>
+        <td class="img-td" style="width: 60%; vertical-align: middle; text-align-last: center;">
+            <img class="fade-in hover-scale-shadow rounded-inner-shadow" src="./ActivosIMG/ECO_CONSTRUCTOR/BIENVENIDO.PNG" style="width: 28%; height: auto;" alt="BIENVENIDO">
+            <img class="fade-in hover-scale-shadow rounded-inner-shadow" src="./ActivosIMG/ECO_CONSTRUCTOR/NUEVA PARTIDA.PNG" style="width: 28%; height: auto;" alt="NUEVA PARTIDA">
+            <img class="fade-in hover-scale-shadow rounded-inner-shadow" src="./ActivosIMG/ECO_CONSTRUCTOR/SELECCION NUEVA PARTIDA.PNG" style="width: 28%; height: auto;" alt="SELECCION NUEVA PARTIDA">
+        </td>
+    </tr>
+</table>  
+<table class="responsive-table" style="width: 100%; table-layout: fixed;">
+    <tr>
+        <td class="img-td" style="width: 60%; vertical-align: middle; text-align-last: center;">
+            <img class="fade-in hover-scale-shadow rounded-inner-shadow" src="./ActivosIMG/ECO_CONSTRUCTOR/GAMEPLAY PARTE 1.PNG" style="width: 28%; height: auto;" alt="GAMEPLAY PARTE 1">
+            <img class="fade-in hover-scale-shadow rounded-inner-shadow" src="./ActivosIMG/ECO_CONSTRUCTOR/GAMEPLAY PARTE 2.PNG" style="width: 28%; height: auto;" alt="GAMEPLAY PARTE 2">
+            <img class="fade-in hover-scale-shadow rounded-inner-shadow" src="./ActivosIMG/ECO_CONSTRUCTOR/GAMEPLAY PARTE 3.PNG" style="width: 28%; height: auto;" alt="GAMEPLAY PARTE 3">
+        </td>
+    </tr>
+</table>
+<table class="responsive-table" style="width: 100%; table-layout: fixed;">
+    <tr>
+        <td class="img-td" style="width: 60%; vertical-align: middle; text-align-last: center;">
+            <img class="fade-in hover-scale-shadow rounded-inner-shadow" src="./ActivosIMG/ECO_CONSTRUCTOR/GAMEPLAY PARTE 4.PNG" style="width: 28%; height: auto;" alt="GAMEPLAY PARTE 4">
+            <img class="fade-in hover-scale-shadow rounded-inner-shadow" src="./ActivosIMG/ECO_CONSTRUCTOR/GAMEPLAY PARTE 5.PNG" style="width: 28%; height: auto;" alt="GAMEPLAY PARTE 5">
+        </td>
+    </tr>
+</table>
+
+<p>NIVEL 1: PLAYA</p>
+<p>Después de seleccionar al ayudante, se presentará una playa casi vacía. En la parte superior habrá una ruleta con diferentes elementos para completar el nivel. Se reproducirá un sonido y el niño deberá seleccionar el animal correcto para completar la playa. Si se equivoca, no pasará nada. Una vez seleccionados todos los elementos faltantes, la playa se completará.</p>
+<p>NIVEL 2: BOSQUE SILVESTRE</p>
+<p>En este nivel, el escenario es un bosque silvestre lleno de animales y plantas. El niño debe identificar y seleccionar los elementos correctos para completar el bosque. Esta actividad ayuda a los niños a aprender sobre la flora y fauna del bosque.</p>
+<p>NIVEL 3:ZONA SAFARI</p>
+<p>El escenario de este nivel es una zona de safari. Los jugadores deben seleccionar correctamente los animales y elementos que pertenecen a este entorno. Esto les enseña a reconocer los animales que viven en un safari y su hábitat natural.</p>
+<p>NIVEL 4:ZONA MONTAÑOSA</p>
+<p>El último nivel se sitúa en una zona montañosa. Los niños deben identificar y seleccionar los elementos correctos que completan este paisaje natural. Este nivel educa a los niños sobre los animales y plantas que habitan en las montañas y las características de este ecosistema.</p>
+                        
+<h13 style="color: blue; text-align: center; display: block;">FIGMA - FOREST ADVENTURE</h13>
+<table class="responsive-table" style="width: 100%; table-layout: fixed;">
+    <p>"BOSQUE AVENTURA" es un juego educativo interactivo diseñado para enseñar a los niños sobre la naturaleza y los animales a través de diferentes actividades y niveles. Cada nivel está estructurado para fomentar el aprendizaje mediante el juego, ofreciendo retroalimentación continua y motivación.</p>
+    <tr>
+        <td class="img-td" style="width: 60%; vertical-align: middle; text-align-last: center;">
+            <img class="fade-in hover-scale-shadow rounded-inner-shadow" src="./ActivosIMG/FOREST ADVENTURE/BIENVENIDO.PNG" style="width: 28%; height: auto;" alt="BIENVENIDO">
+            <img class="fade-in hover-scale-shadow rounded-inner-shadow" src="./ActivosIMG/FOREST ADVENTURE/NUEVA AVENTURA.PNG" style="width: 28%; height: auto;" alt="NUEVA AVENTURA">
+            <img class="fade-in hover-scale-shadow rounded-inner-shadow" src="./ActivosIMG/FOREST ADVENTURE/NIVEL 1.PNG" style="width: 28%; height: auto;" alt="NIVEL 1">
+        </td>
+    </tr>
+</table>  
+<table class="responsive-table" style="width: 100%; table-layout: fixed;">
+    <tr>
+        <td class="img-td" style="width: 60%; vertical-align: middle; text-align-last: center;">
+            <img class="fade-in hover-scale-shadow rounded-inner-shadow" src="./ActivosIMG/FOREST ADVENTURE/NIVEL 1 - SELECCION DE ANIMALES.PNG" style="width: 28%; height: auto;" alt="NIVEL 1 - SELECCION DE ANIMALES">
+            <img class="fade-in hover-scale-shadow rounded-inner-shadow" src="./ActivosIMG/FOREST ADVENTURE/NIVEL 1 SELECCION CORRECTA.PNG" style="width: 28%; height: auto;" alt="NIVEL 1 SELECCION CORRECTA">
+            <img class="fade-in hover-scale-shadow rounded-inner-shadow" src="./ActivosIMG/FOREST ADVENTURE/NIVEL 1 - SELECCION INCORRECTA.PNG" style="width: 28%; height: auto;" alt="NIVEL 1 - SELECCION INCORRECTA">
+        </td>
+    </tr>
+</table>
+<table class="responsive-table" style="width: 100%; table-layout: fixed;">
+    <tr>
+        <td class="img-td" style="width: 60%; vertical-align: middle; text-align-last: center;">
+            <img class="fade-in hover-scale-shadow rounded-inner-shadow" src="./ActivosIMG/FOREST ADVENTURE/NIVEL 2.PNG" style="width: 28%; height: auto;" alt="NIVEL 2">
+            <img class="fade-in hover-scale-shadow rounded-inner-shadow" src="./ActivosIMG/FOREST ADVENTURE/NIVEL 2 - ANIMALES POR SONIDO.PNG" style="width: 28%; height: auto;" alt="NIVEL 2 - ANIMALES POR SONIDO">
+            <img class="fade-in hover-scale-shadow rounded-inner-shadow" src="./ActivosIMG/FOREST ADVENTURE/NIVEL 2 -  SELECCION CORRECTA.PNG" style="width: 28%; height: auto;" alt="NIVEL 2 - SELECCION CORRECTA">
+        </td>
+    </tr>
+</table> 
+<table class="responsive-table" style="width: 100%; table-layout: fixed;">
+    <tr>
+        <td class="img-td" style="width: 60%; vertical-align: middle; text-align-last: center;">
+            <img class="fade-in hover-scale-shadow rounded-inner-shadow" src="./ActivosIMG/FOREST ADVENTURE/NIVEL 2 -  SELECCION INCORRECTA.PNG" style="width: 28%; height: auto;" alt="NIVEL 2 - SELECCION INCORRECTA">
+            <img class="fade-in hover-scale-shadow rounded-inner-shadow" src="./ActivosIMG/FOREST ADVENTURE/NIVEL 3.PNG" style="width: 28%; height: auto;" alt="NIVEL 3">
+            <img class="fade-in hover-scale-shadow rounded-inner-shadow" src="./ActivosIMG/FOREST ADVENTURE/NIVEL 3 - ANIMALES POR SONIDO.PNG" style="width: 28%; height: auto;" alt="NIVEL 3 - ANIMALES POR SONIDO">
+        </td>
+    </tr>
+</table>
+<table class="responsive-table" style="width: 100%; table-layout: fixed;">
+    <tr>
+        <td class="img-td" style="width: 60%; vertical-align: middle; text-align-last: center;">
+            <img class="fade-in hover-scale-shadow rounded-inner-shadow" src="./ActivosIMG/FOREST ADVENTURE/NIVEL 3 - SELECCION CORRECTA.PNG" style="width: 28%; height: auto;" alt="NIVEL 3 - SELECCION CORRECTA">
+            <img class="fade-in hover-scale-shadow rounded-inner-shadow" src="./ActivosIMG/FOREST ADVENTURE/NIVEL 3 - SELECCION INCORRECTA.PNG" style="width: 28%; height: auto;" alt="NIVEL 3 - SELECCION INCORRECTA">
+            <img class="fade-in hover-scale-shadow rounded-inner-shadow" src="./ActivosIMG/FOREST ADVENTURE/CONTINUAR ADVENTURA.PNG" style="width: 28%; height: auto;" alt="CONTINUAR ADVENTURA">
+        </td>
+    </tr>
+</table>
+<p>NIVEL 1: SELECCION DE ANIMALES</p>
+<p>En este nivel, los jugadores deben seleccionar la figura correcta de un animal entre varias opciones. Esta actividad ayuda a los niños a reconocer y asociar imágenes de animales con sus nombres. La retroalimentación inmediata (correcta o incorrecta) les permite aprender de sus errores y mejorar sus habilidades de identificación visual.</p>
+<p>NIVEL 2: IDENTIFICACION POR SONIDO</p>
+<p>Aquí, los jugadores escuchan el sonido de un animal y deben seleccionar la figura correspondiente. Esta actividad enseña a los niños a asociar sonidos específicos con los animales que los emiten, mejorando su capacidad de reconocimiento auditivo. La retroalimentación ayuda a reforzar el aprendizaje y a corregir errores en tiempo real.</p>
+<p>NIVEL 3: ESCRITURA DEL NOMBRE DE ANIMALES POR SONIDO E IMAGEN</p>
+<p>En el nivel final, los jugadores deben escribir el nombre del animal basado en su sonido y una imagen proporcionada. Esta actividad combina habilidades auditivas y visuales con habilidades de escritura, ayudando a los niños a aprender la ortografía correcta de los nombres de los animales. La retroalimentación y los intentos repetidos fomentan la práctica y la memorización.</p>
+<section id="tecnologias" class="section-content">
+    <h2 class="section-title">TECNOLOGÍAS Y HERRAMIENTAS UTILIZADAS</h2>
+    <p>1. Unity 3D</p>
+    <p>Hemos elegido Unity para el desarrollo de nuestro videojuego debido a su flexibilidad y potencia en la creación de gráficos 2D. Unity es ampliamente reconocido por su capacidad para manejar proyectos de diferentes tamaños y complejidades, además de ofrecer una gran cantidad de recursos educativos y una comunidad activa. Estas características facilitan tanto el aprendizaje como la resolución de problemas, lo que es crucial para nuestro equipo de desarrollo.</p>
+    <p>2. Photoshop en Canva</p>
+    <p>Utilizaremos Photoshop en Canva principalmente para la creación de logos y elementos de diseño para el prototipo del juego. Canva es una herramienta accesible y fácil de usar que permite producir assets de alta calidad de manera eficiente. Su integración con otras plataformas y sus herramientas avanzadas aseguran la coherencia visual en todo el proyecto, lo cual es esencial para la estética del juego.</p>
+    <p>3. GitHub</p>
+    <p>GitHub será utilizado para visualizar el diseño del juego en un formato de página web, proporcionando un entorno cómodo para trabajar y observar el progreso del proyecto. Contamos con un portafolio en GitHub que tomaremos como referencia, facilitando la colaboración y manteniendo un historial detallado de todos los cambios realizados. Esto asegura que podamos trabajar en paralelo sin conflictos y revertir cambios cuando sea necesario, además de permitir la revisión de código y la integración continua.</p>
+</section>
+<section id="tecnologias" class="section-content">
+<h2 class="section-title">ARQUITECTURA GENERAL DEL SISTEMA</h2>
+        <tr>
+        <td class="img-td" style="width: 60%; vertical-align: middle; text-align-last: center;">
+            <img class="fade-in hover-scale-shadow rounded-inner-shadow" src="./ActivosIMG/Arquitectura-clasica-de-un-videojuego.png" style="width: 40%; height: auto;" alt="Arquitectura">
+        </td>
+    </tr>
+</section>
+<table class="responsive-table" style="width: 100%; table-layout: fixed;">
+<p>" 1. Interfaz de Usuario (UI): ¿Qué es?: </p>
+<p>Pantallas y controles que el jugador ve y usa, Ejemplos: Menú principal, puntaje, vida del jugador, botones.</p>
+<p> 2. Lógica de Juego: ¿Qué es?: </p>
+<p> Las reglas y comportamientos que determinan cómo funciona el juego, Ejemplos: Qué pasa cuando el jugador presiona un botón, cómo se mueven los personajes.</p>
+<p> 3. motor de Juego: ¿Qué es?:</p>
+<p> El corazón del juego que maneja todo lo que ves y sientes, Ejemplos: Gráficos, movimiento de personajes, física (como las colisiones).</p>
+<p> 4. Comunicación MIDI: ¿Qué es?: </p>
+<p> Cómo el juego entiende y usa las señales del juguete MIDI, Ejemplos: Leer las señales que envía el juguete MIDI y hacer que el juego responda a ellas.</p>
+<p> 5. Guardado de datos: ¿Qué es?: </p>
+<p> Dónde y cómo se guarda la información del juego, Ejemplos. Guardar el progreso del jugador, configuraciones.</p>
+     
+<section id="Diagrama" class="section-content">
+    <h2 class="section-title">DIAGRAMA DE ARQUITECTURA GENERAL</h2>
+    <div class="img-td" style="width: 60%; vertical-align: middle; text-align: center;">
+        <img class="fade-in hover-scale-shadow rounded-inner-shadow" src="./ActivosIMG/diagrama-arquitectura.png" style="width: 30%; height: auto;" alt="DIAGRAMA">
+    </div>
+</section>  
+
+<section id="Explicacion" class="section-content">
+    <h2 class="section-title">EXPLICACIÓN DE CADA COMPONENTE</h2>
+    <p>1. Interfaz de Usuario (UI):</p>
+    <p>Menú Principal: Pantalla inicial del juego donde puedes empezar a jugar, cambiar opciones, o salir.</p>
+    <p>HUD: Elementos en pantalla que muestran información importante durante el juego, como tu puntaje o salud.</p>
+    <p>Controles de Juego: Botones o controles que usas para interactuar con el juego.</p>
+    <p>2. Lógica de Juego:</p>
+    <p>Reglas del Juego: Definen qué puede y no puede hacer el jugador y cómo responde el juego.</p>
+    <p>Mecánicas de Juego: Cómo las acciones del jugador, como presionar botones en el juguete MIDI, afectan el juego.</p>
+    <p>3. Motor de Juego:</p>
+    <p>Gráficos: Todo lo que ves en el juego, como personajes y escenarios.</p>
+    <p>Física: Cómo los objetos en el juego interactúan entre sí, como chocarse o moverse.</p>
+    <p>Escenas: Diferentes niveles o áreas del juego.</p>
+    <p>4. Guardado de Datos:</p>
+    <p>Progreso del Juego: Guardar y cargar el estado del juego para continuar más tarde.</p>
+    <p>Configuraciones: Guardar preferencias del jugador, como el volumen del sonido o controles personalizados.</p>
+</section>
+<section id="Cronograma" class="section-content">
+    <h2 class="section-title">CRONOGRAMA PARA EL DESARROLLO DE PROTOTIPO</h2>
+         <tr>
+            <td class="img-td" style="width: 60%; vertical-align: middle; text-align-last: center;">
+                <img class="fade-in hover-scale-shadow rounded-inner-shadow" src="./ActivosIMG/Cronograma.jpg" style="width: 40%; height: auto;" alt="Arquitectura">
+            </td>
+        </tr>
+    <p>SEMANA 1: </p>
+    <p>Durante la primera semana, el enfoque estará en definir claramente el concepto del juego y los objetivos principales. Esto incluirá la creación de un prototipo básico que integre la funcionalidad de drag and drop, donde los jugadores puedan seleccionar y arrastrar imágenes para completar una imagen principal. Esta fase establecerá la base para el juego, asegurando que la mecánica central de interacción esté bien implementada antes de avanzar a la siguiente etapa.</p>
+    <p>SEMANA 2: </p>
+    <p>En las semana 2 se trabajó en el desarrollo del prototipo del juego. Aquí, se implementará la funcionalidad básica de drag and drop, que permitirá a los jugadores interactuar con imágenes, arrastrándolas para completar una imagen principal. Este prototipo servirá como base para refinar y ajustar la mecánica del juego en fases posteriores.</p>
+    <p>SEMANA 3: </p>
+    <p>La tercera semana se implementará la pantalla en la que el jugador ingresará su nombre y seleccionará un ayudante (animal). Este ayudante se integrará en las escenas posteriores, proporcionando mensajes y apoyo visual durante el juego. La correcta configuración de la funcionalidad de drag and drop también se perfeccionará, asegurando que las imágenes seleccionadas se coloquen correctamente en la imagen principal, con retroalimentación visual y sonora para indicar aciertos o errores.</p
+    <p>SEMANA 4: </p>
+    <p>La cuarta semana se dedicará a la integración completa de sonidos, de las escenas de las secciones del juego y que den retroalimentación inmediata al jugador al realizar una acción correcta o incorrecta en el juego. Además, se llevarán a cabo pruebas exhaustivas para identificar cualquier área de mejora en la jugabilidad, optimizando la experiencia del usuario.	</p>
+</section>
+
+                <section id="about" style="margin-top: 1.25 rem !important;">
+                    
             </div>
-        </nav>
+        </div>
+        <!-- /#page-content-wrapper -->
 
-        <div class="container-fluid">
-            <!-- Sección de Inicio -->
-            <section id="home" style="margin-top: 0 !important;">
-                <table class="responsive-table" style="width: 100%; table-layout: fixed;">
-                    <tr>
-                        <td style="vertical-align: middle; padding-right: 20px;">
-                            <h2>Midi Toy</h2>
-                            <p>¡Explora el mundo musical con Midi Toy! Sumérgete en una experiencia única donde podrás jugar, experimentar y disfrutar de música infantil utilizando a MIDI TOY en este emocionante y divertido juego. Descubre melodías encantadoras, interactúa con coloridos personajes musicales y desarrolla tus habilidades creativas mientras te diviertes.</p>
-                        </td>
-                        <td class="img-td" style="width: 40%; vertical-align: middle;">
-                            <img class="fade-in hover-scale-shadow rounded-inner-shadow" src="./ActivosIMG/MODELOTOY.png" style="width: 100%; height: auto;" alt="MIDI TOY LOGO">
-                        </td>
-                    </tr>
-                </table>
-            </section>
-
-            <!-- Sección de Ideación - Versión 1 -->
-            <section id="about" style="margin-top: 1.25 rem !important;">
-                <h2>Ideación - Versión 1</h2>
-                <table class="responsive-table" style="width: 100%; table-layout: fixed;">
-                    <tr>
-                        <td style="width: 100%; vertical-align: middle; display: flex; justify-content: center; align-items: center; text-align-last: center;">
-                            <img class="fade-in hover-scale-shadow rounded-inner-shadow" src="./ActivosIMG/Ideacion.png" style="width: 90%; height: auto;" alt="ideación">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td style="vertical-align: middle; padding-right: 20px; width: 90%; padding-top:0.75%; padding-bottom:3.5%;">
-                            <p>Se siguieron los pasos de ideación: diseño centrado en el juego, establecer objetivos de experiencia y crear prototipos y pruebas.</p>
-                            <p>"Lluvia de Ideas": Iniciamos con una sesión de lluvia de ideas en la que todo el equipo participó activamente, generando una variedad de conceptos y características posibles para el videojuego, priorizando cantidad.</p>
-                            <p>"Mapa Mental": Utilizamos un mapa mental para organizar y desarrollar las ideas generadas, visualizando la conexión entre los distintos elementos del videojuego.</p>
-                        </td>
-                    </tr>
-                </table>
-
-                <!-- Ideas o características más relevantes de la Versión 1 -->
-                <h3>Ideas o características más relevantes de la Versión 1</h3>
-                <td style="vertical-align: middle; padding-right: 20px; width: 90%; padding-top:0.75%; padding-bottom:3.5%;">
-                    <p>"Análisis": Se consideraron varios factores clave para asegurar que las ideas seleccionadas fueran las más prometedoras y viables:</p>
-                    <p>1. Relevancia con el objetivo principal del juguete.</p>
-                    <p>2. Viabilidad técnica y de recursos.</p>
-                    <p>3. Beneficios en el aprendizaje del niño y accesibilidad.</p>
-                    <p>4. Enfoque inicial en la proyección y metas a alcanzar.</p>
-                </td>
-
-                <!-- Tabla con imágenes relacionadas -->
-                <table class="responsive-table" style="width: 100%; table-layout: fixed;">
-                    <tr>
-                        <td class="img-td" style="width: 50%; vertical-align: middle; text-align-last: center;">
-                            <img class="fade-in hover-scale-shadow rounded-inner-shadow" src="./ActivosIMG/Objetivos.png" style="width: 150%; height: auto;" alt="Objetivos">
-                        </td>
-                        <td style="vertical-align: middle; padding-left: 280px;">
-                            <p>Objetivos enfocados al aprendizaje y desarrollo del niño.</p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="img-td" style="width: 50%; vertical-align: middle; text-align-last: center;">
-                            <img class="fade-in hover-scale-shadow rounded-inner-shadow" src="./ActivosIMG/Mecanicas.png" style="width: 150%; height: auto;" alt="Mecánicas">
-                        </td>
-                        <td style="vertical-align: middle; padding-left: 280px;">
-                            <p>Mecánicas enfocadas en la motricidad del niño.</p>
-                        </td>
-                    </tr>
-                    <!-- ... otros elementos de la tabla ... -->
-                </table>
-            </section>
-
-            <!-- Otras secciones como Prototipado, Tecnologías, etc. -->
-            <section id="juegos">
-                <h3>Ideas para la ejecución del Prototipado de la Versión 1</h3>
-                <h4>IDEA 1</h4>
-                <p>BLOQUE AVENTURA: El juego consiste en que se tiene un objeto grande, una figura geométrica, con espacios que son figuras donde el niño debe colocar correctamente las piezas.</p>
-                <table class="responsive-table" style="width: 100%; table-layout: fixed;">
-                    <tr>
-                        <td class="img-td" style="width: 33%; vertical-align: middle; text-align-last: center;">
-                            <img class="fade-in hover-scale-shadow rounded-inner-shadow" src="./ActivosIMG/IDEA1.png" style="width: 65%; height: auto;" alt="IDEA 1">
-                        </td>
-                    </tr>
-                </table>
-                <!-- Más ideas y secciones -->
-            </section>
+        <!-- Sidebar Right -->
+        <div class="sidebar-wrapper bg-plomo border-left dark-mode">
+            <div class="sidebar-heading text-white"></div>
+            <div class="list-group list-group-flush" style="flex-grow: 1; overflow-y: auto; display: flex; flex-direction: column; align-items: center; justify-content: center; padding-top: 20px;">
+                <!-- Barra lateral derecha vacía -->
+            </div>
         </div>
     </div>
+    <!-- /#wrapper -->
 </body>
 </html>
